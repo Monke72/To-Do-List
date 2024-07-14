@@ -14,9 +14,12 @@
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-  border: 1px solid grey;
-  max-width: 500px;
-  width: 100%;
+  border: 1px solid #fff;
+  max-width: 700px;
+  width: 30%;
+  min-width: 500px;
+  background: transparent;
+  backdrop-filter: blur(15px);
 }
 
 .form {
@@ -26,17 +29,33 @@
 }
 
 .form__textarea {
+  max-width: 100%;
   min-height: 50px;
   padding: 10px;
   font-size: 18px;
+  border-radius: 8px;
+  border: 0;
 }
 
 .form__send-btn,
 .form__cancel-btn {
-  border: 1px solid grey;
+  border: 1px solid #fff;
   padding: 3px;
   border-radius: 5px;
-  color: inherit;
+  font-size: 20px;
+  padding-block: 5px;
+}
+.form__send-btn {
+  color: rgb(45, 185, 45);
+  margin-top: 10px;
+}
+.form__cancel-btn {
+  color: red;
+}
+.form__title {
+  font-size: 22px;
+  padding-bottom: 10px;
+  color: cornflowerblue;
 }
 
 .form__send-btn:active,
@@ -52,7 +71,7 @@
 
 .task {
   position: relative;
-  border: 1px solid grey;
+  border: 1px solid #fff;
   padding: 5px;
   border-radius: 5px;
   display: flex;
@@ -72,11 +91,14 @@
   top: 50%;
   transform: translateY(-50%);
   left: -25px;
+  color: #fff;
+  font-size: 17px;
 }
 
 .task__text {
   flex-grow: 1;
   padding-right: 10px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .task.done {
@@ -115,7 +137,7 @@
 
 .task__done.active svg path,
 .task__done:active svg path {
-  stroke: green;
+  stroke: rgb(45, 185, 45);
 }
 
 .task__del:active svg path,
@@ -150,4 +172,11 @@
 }
 .none {
   display: none;
+}
+
+body {
+  background-image: url(./../images/siluet_zvezdnoe_nebo_padaiushchaia_zvezda_131373_3840x2160.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

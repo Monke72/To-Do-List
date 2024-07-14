@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="inner">
+        <form class="form">
+          <h4 class="form__title">Введите задачу</h4>
+          <textarea class="form__textarea"></textarea>
+          <button class="form__send-btn" type="submit">Добавить</button>
+          <button class="form__cancel-btn none" type="button">Отмена</button>
+        </form>
+        <div class="output"></div>
+      </div>
+    </div>
+
+    <div class="todo__clear none">
+      <div class="todo__clear-wrapper">
+        <p class="todo__clear-text">Поле не должно быть пустым</p>
+      </div>
+    </div>
+
+    <script type="module" src="./js/index.js" defer></script>
+  </body>
+</html>
